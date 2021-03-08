@@ -3,8 +3,8 @@ use ssvm_tensorflow_interface;
 use serde::Deserialize;
 
 fn main() {
-    let model_data: &[u8] = include_bytes!("lite-model_aiy_vision_classifier_food_V1_1.tflite");
-    let labels = include_str!("aiy_food_V1_labelmap.txt");
+    let model_data: &[u8] = include_bytes!("lite-model_aiy_vision_classifier_birds_V1_3.tflite");
+    let labels = include_str!("aiy_birds_V1_labelmap.txt");
 
     let mut buffer = String::new();
     io::stdin().read_to_string(&mut buffer).expect("Error reading from STDIN");
@@ -59,11 +59,11 @@ fn main() {
 
     let class_name = label_lines.next().unwrap().to_string();
     if max_value > 50 && max_index != 0 {
-      // println!("It {} a <a href='https://www.google.com/search?q={}'>{}</a> in the picture", confidence.to_string(), class_name, class_name);
-      println!("上传的图片里面{} <a href='https://www.google.com/search?q={}'>{}</a>", confidence.to_string(), class_name, class_name);
+      // println!("It {} a <a href='https://cn.bing.com/search?q={}'>{}</a> in the picture", confidence.to_string(), class_name, class_name);
+      println!("上传的图片里面{} <a href='https://cn.bing.com/search?q={}'>{}</a>", confidence.to_string(), class_name, class_name);
     } else {
-      // println!("It does not appears to be any food item in the picture.");
-      println!("上传的图片里面没有检测到食品");
+      // println!("It does not appears to be any birds item in the picture.");
+      println!("上传的图片里面没有检测到相关鸟类");
     }
     // println!("{} : {}", label_lines.next().unwrap().to_string(), confidence.to_string());
 }
