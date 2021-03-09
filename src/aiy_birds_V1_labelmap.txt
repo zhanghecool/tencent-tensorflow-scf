@@ -1,4 +1,3 @@
-__background__
 Haemorhous cassinii
 Aramus guarauna
 Rupornis magnirostris
@@ -109,7 +108,7 @@ Phalacrocorax pelagicus
 Icterus cucullatus
 Icterus graduacauda
 Motacilla aguimp
-Anas superciliosa 脳 platyrhynchos
+Anas superciliosa × platyrhynchos
 Icterus pustulatus
 Icterus gularis
 Carduelis cannabina
@@ -757,7 +756,7 @@ Selasphorus sasin
 Selasphorus rufus
 Calothorax lucifer
 Pycnonotus barbatus
-Larus glaucescens 脳 occidentalis
+Larus glaucescens × occidentalis
 Aphelocoma woodhouseii
 Florisuga mellivora
 Haematopus finschi
@@ -963,3 +962,4 @@ Anser anser domesticus
 Mitrephanes phaeocercus
 Ardenna creatopus
 Ardenna gravis
+background
